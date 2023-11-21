@@ -1,6 +1,6 @@
 // alert prompt confirm
 //==============
-// alert('Hello World');
+// alert('Hello');
 
 
 // Пример с prompt

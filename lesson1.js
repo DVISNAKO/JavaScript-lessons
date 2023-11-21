@@ -30,7 +30,7 @@ console.log(Boolean(0)); // false
 console.log( Boolean("Привет!") ); // true
 console.log( Boolean("") ); //false
 
-//6. 
+//6. Boolean 0 и пустая строка
 
 console.log(Boolean('0')); // true
 console.log(Boolean('   ')); //true
