@@ -1,4 +1,4 @@
-// alert prompt confirm
+// Тема: alert prompt confirm
 //==============
 // alert('Hello');
 
