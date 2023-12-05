@@ -28,7 +28,7 @@ console.log(dayType);
 
 let type;
 
-let number = -2;
+let number = 0;
 
 switch (true) {
   case number > 0:
