@@ -4,15 +4,35 @@ let sum = (a, b) => a + b;
 
 console.log(sum(2, 3));
 
+
+
+
+
+
+
+
 // с одним аргументом 
 let double = n => n * 2;
 console.log(double(4));
+
+
+
+
+
+
+
+
 
 // без аргументов
 
 let sayHi = () => console.log("Hello!");
 
 sayHi();
+
+
+
+
+
 
 // Function Expression.
 
@@ -23,6 +43,11 @@ let welcome = (age < 18) ?
   () => alert("Здравствуйте!");
 
 welcome();
+
+
+
+
+
 
 // множество инструкций
 
