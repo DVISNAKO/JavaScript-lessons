@@ -13,6 +13,7 @@ for (let key in user) {
 }
 
 clone.name = 'Alise';
+console.log(user);
 console.log(clone);
 
 //==== Метот Assign({вернет объект}, копирует свойства всех исходных объектов, объект2, объект3)
@@ -26,6 +27,7 @@ let user2 = {
 
   console.log(clone);
 
-  clone = {...user2};
 
+
+  clone = {...user2};
   console.log(clone);
