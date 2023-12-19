@@ -11,6 +11,9 @@ let mcs = 0.000001; // 1 микросекунду
 let ms = 1e-6; // шесть нулей слева от 1
 
 
+
+
+
 //Вызов метода на числе
 console.log(123456..toString(36)) // OK ..
 console.log(123456.toString(36)); //Error
@@ -18,22 +21,29 @@ console.log((123456).toString(36)) // OK ()
 
 
 
+
+
 // Math.floor Округление в меньшую сторону
-let str1 = 1.6;
-console.log(Math.floor(str1));
+let num1 = 1.6;
+console.log(Math.floor(num1));
 
 //Math.ceil Округление в большую
-let str2 = 1.3;
-console.log(Math.floor(str2));
+let num2 = 1.3;
+console.log(Math.ceil(num2));
 
 // Math.round Округление до ближайшего целого
-let str3 = 1.3;
-let str4 = 1.6;
-console.log(Math.round(str3), Math.round(str4));
+let num3 = 1.3;
+let num4 = 1.6;
+console.log(Math.round(num3), Math.round(num4));
+
+
+
+
+
 
 //Math.random() Возвращает случайное число от 0 до 1
 let a = '';
-console.log(Math.random(a).toFixed(2));
+console.log(Math.random(a).toFixed(4));
 
 //Math.max Возвращает наибольшее
 console.log( Math.max(3, 5, -10, 0, 1) ); // 5
@@ -43,12 +53,14 @@ console.log(Math.pow(2, 10))
 
 
 
-//округлить число до 2-х знаков после запятой
-let num1 = 1.23456;
-console.log( Math.round(num1 * 100) / 100 ); 
 
-let num2 = 12.34435;
-console.log( num2.toFixed(3));
+
+//округлить число до 2-х знаков после запятой
+let num5 = 1.23456;
+console.log( Math.round(num5 * 100) / 100 ); 
+
+let num6 = 12.34435;
+console.log( num6.toFixed(1));
 
 
 
