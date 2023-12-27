@@ -4,19 +4,13 @@ let arr1 = new Array();
 let arr2 = [];
 
 //В массиве могут храниться элементы любого типа.
-let fruits = ["Яблоко", 11, { name: 'Джон' }, true,];
+let myArr = ["Яблоко", 11, { name: 'Джон' }, true,];
 
-console.log( fruits[0] ); // Яблоко
-console.log( fruits[1] ); // Апельсин
-console.log( fruits[2] ); // Слива
-console.log( fruits.length );
+console.log( myArr[0] ); // Яблоко
+console.log( myArr[1] ); // 11
+console.log( myArr[2] ); // { name: 'Джон' }
+console.log( myArr.length ); // 4 элемента в массиве
 
-/*
-push - добавляет элемент в конец.
-shift - удаляет элемент в начале, сдвигая очередь, так что второй элемент становится первым.
-push - добавляет элемент в конец.
-pop - удаляет последний элемент.
-*/
 
 let fruits2 = ["Яблоко", "Апельсин"];
 console.log( fruits2 ); 
@@ -31,12 +25,12 @@ let fruits3 = ["Яблоко", "Апельсин", "Слива"];
 for (let i = 0; i < fruits3.length; i++) {
     console.log( fruits3[i] );
 }
-// for of
+// for of - for item of arr
 for (let fruit of fruits3) {
     console.log( fruit );
   }
 
-//for in
+//for in - for key in arr
 for (let key in fruits3) {
     console.log( fruits3[key] );
 }

@@ -33,6 +33,7 @@ fruits.forEach((item, index, array) => {
     console.log(`У ${item}  индекс ${index} в ${array}`)
 })
 
+
 // find
 let users = [
     {id: 1, name: "Вася"},
