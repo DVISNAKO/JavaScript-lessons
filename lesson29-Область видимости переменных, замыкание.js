@@ -14,16 +14,16 @@ console.log(message);
 
 //Для if, for, while и т.д. переменные, видны только внутри
 if (true) {
-    let phrase = "Hello";
+    let text = "Hello";
   
-    console.log(phrase); // Hello
+    console.log(text); // Hello
   }
   
- console.log(phrase); // ошибка phrase is not defined
+ console.log(text); // ошибка text is not defined
 
 
 
- 
+
 //============= Вложенные функции
 //Функция называется «вложенной», когда она создаётся внутри другой функции.
 
@@ -40,7 +40,9 @@ if (true) {
    console.log( counter() ); // 0
    console.log( counter() ); // 1
    console.log( counter() ); // 2
+   console.log( counter() );
 
+   
    /*вопрос: «что такое замыкание?»
    Замыкание – это функция, которая запоминает свои внешние переменные и может получить к ним доступ. 
    в JavaScript, все функции изначально являются замыканиями.
@@ -64,7 +66,7 @@ function first() {
 let number = 1;
 
 function second () {
-    let number = 2;
+    // let number = 2;
     console.log((number));
 }
 return second;
