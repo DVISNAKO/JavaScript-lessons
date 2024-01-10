@@ -2,7 +2,7 @@
 
 /* 
 setTimeout  - вызвать 1 раз,
-setInterval - вызывать функцию регулярно
+setInterval - вызывать функцию регулярно, повторяя вызов через определённый интервал времени.
 */
 
 let timerId = setTimeout(func, [delay], [arg1], [arg2], ...);
