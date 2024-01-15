@@ -1,5 +1,3 @@
-'use strict'
-
 //Тема: Флаги и дескрипторы свойств
 
 //Флаги свойств
@@ -8,7 +6,7 @@ let user = {
     name: "John"
   };
   
-  let descriptor = Object.getOwnPropertyDescriptor(user, 'name');
+let descriptor = Object.getOwnPropertyDescriptor(user, 'name');
   
 console.log( JSON.stringify(descriptor, null, 2 ) );
   /* дескриптор свойства:
@@ -16,7 +14,8 @@ console.log( JSON.stringify(descriptor, null, 2 ) );
     "value": "John",
     "writable": true, свойство можно изменить, иначе оно только для чтения.
     "enumerable": true, свойство перечисляется в циклах, в противном случае циклы его игнорируют.
-    "configurable": true, свойство можно удалить, а эти атрибуты можно изменять, иначе этого делать нельзя.
+    "configurable": true, свойство можно удалить, а эти атрибуты можно изменять, 
+    иначе этого делать нельзя.
   }
   */
 
