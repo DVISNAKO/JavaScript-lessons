@@ -24,16 +24,16 @@ class Animal {
       console.log(`${this.name} прячется!`);
     }
     // переопледеление метода 
-    stop() { 
-        this.speed = 0;
-        console.log(`${this.name} стоит неподвижно метод Rabbit.`);
-      }
+    // stop() { 
+    //     this.speed = 0;
+    //     console.log(`${this.name} стоит неподвижно метод Rabbit.`);
+    //   }
       /* Это полезно, когда вам нужно сохранить поведение родительского метода, 
         но добавить свою собственную функциональность. */
-    //   stop() {
-    //     super.stop(); // вызываем родительский метод stop
-    //     this.hide(); // и затем hide
-    //   }
+      stop() {
+        super.stop(); // вызываем родительский метод stop
+        this.hide(); // и затем hide
+      }
   }
   
   let rabbit = new Rabbit("Белый кролик");
