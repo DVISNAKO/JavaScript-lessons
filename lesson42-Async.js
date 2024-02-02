@@ -1,4 +1,21 @@
 //Тема: Async/await
+
+
+async function f() {
+
+    let promise = new Promise((resolve, reject) => {
+      setTimeout(() => resolve("готово!"), 1000)
+    });
+  
+    let result = await promise; // будет ждать, пока промис не выполнится (*)
+    //await нельзя использовать в обычных функциях
+    console.log(result); // "готово!"
+  }
+  
+  f();
+
+
+
 // Функция, возвращающая промис после задержки
 function getData() {
     return new Promise(resolve => {
